@@ -31,7 +31,7 @@
             this.btnDesapilar = new System.Windows.Forms.Button();
             this.btnVistazo = new System.Windows.Forms.Button();
             this.btnElementos = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -68,6 +68,7 @@
             this.btnApilar.TabIndex = 3;
             this.btnApilar.Text = "Apilar";
             this.btnApilar.UseVisualStyleBackColor = true;
+            this.btnApilar.Click += new System.EventHandler(this.btnApilar_Click);
             // 
             // lsNombres
             // 
@@ -85,6 +86,7 @@
             this.btnDesapilar.TabIndex = 5;
             this.btnDesapilar.Text = "Desapilar";
             this.btnDesapilar.UseVisualStyleBackColor = true;
+            this.btnDesapilar.Click += new System.EventHandler(this.btnDesapilar_Click);
             // 
             // btnVistazo
             // 
@@ -94,6 +96,7 @@
             this.btnVistazo.TabIndex = 6;
             this.btnVistazo.Text = "Vistazo";
             this.btnVistazo.UseVisualStyleBackColor = true;
+            this.btnVistazo.Click += new System.EventHandler(this.btnVistazo_Click);
             // 
             // btnElementos
             // 
@@ -103,22 +106,24 @@
             this.btnElementos.TabIndex = 7;
             this.btnElementos.Text = "# Elementos";
             this.btnElementos.UseVisualStyleBackColor = true;
+            this.btnElementos.Click += new System.EventHandler(this.btnElementos_Click);
             // 
-            // button5
+            // btnLimpiar
             // 
-            this.button5.Location = new System.Drawing.Point(25, 192);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(82, 23);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Location = new System.Drawing.Point(25, 192);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(82, 23);
+            this.btnLimpiar.TabIndex = 8;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(330, 303);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnElementos);
             this.Controls.Add(this.btnVistazo);
             this.Controls.Add(this.btnDesapilar);
@@ -144,7 +149,7 @@
         private System.Windows.Forms.Button btnDesapilar;
         private System.Windows.Forms.Button btnVistazo;
         private System.Windows.Forms.Button btnElementos;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 
